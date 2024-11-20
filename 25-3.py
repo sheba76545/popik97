@@ -1,4 +1,7 @@
-from fnmatch import*
-for x in range(0,10**8,33):
-    if fnmatch(str(x),'13*02?87'):
-        print(x,x//33)
+def f(n):
+    s = 0
+    for i in range(1,3):
+        s = s + n % 10
+        n = n // 10
+    return(s)
+print(f(2018))
